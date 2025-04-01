@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found Portal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
+    />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <style>
+      /* Reset defaults */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* Overall body styling */
+      body {
+        font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+        background-color: #f8fafb;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Padding to prevent content from being hidden under the fixed header */
+        padding-top: 80px;
+      }
+      
+      /* Fixed header with navigation on the top-right */
+      header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1000;
+      }
+      
+      .nav-menu ul {
+        display: flex;
+        list-style: none;
+      }
+      
+      .nav-menu li {
+        margin-left: 20px;
+      }
+      
+      .nav-menu a {
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        color: #333;
+      }
+      
+      .nav-menu a:hover {
+        color: #ff7f50;
+      }
+      
+      /* Main content centered */
+      main {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      
+      /* Lost & Found card styling */
+      .card {
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        max-width: 600px;
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fixed header with navigation aligned to the top-right -->
+    <header>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="welcomepage.html">Home</a></li>
+          <li><a href="userprofile.html">Profile</a></li>
+          <li><a href="itemdetailview.html">Details</a></li>
+          <li><a href="itemsubmission.html">Submission</a></li>
+          <li><a href="itemlistingsviewer.html">Listing</a></li>
+          <li><a href="loginpage.html">Login</a></li>
+
+          
+
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Centered main content -->
+    <main>
+      <div class="card">
+        <!-- Card Header -->
+        <div class="mb-4">
+          <p class="text-[#0e141b] text-2xl font-bold text-center">Lost &amp; Found</p>
+        </div>
+        
+        <!-- Item Rows -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 bg-slate-50 px-4 py-3 rounded-md">
+            <div class="flex-shrink-0 h-14 w-14 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/89562390-1b48-4064-a677-82ca0fb69b45.png");'></div>
+            <div>
+              <p class="text-[#0e141b] text-base font-medium">Found: Airpods</p>
+              <p class="text-[#4e7397] text-sm">In front of 1400 building</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 bg-slate-50 px-4 py-3 rounded-md">
+            <div class="flex-shrink-0 h-14 w-14 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a5097f8d-7a20-4b98-936b-c5d5a0533719.png");'></div>
+            <div>
+              <p class="text-[#0e141b] text-base font-medium">Lost: MacBook Pro Charger</p>
+              <p class="text-[#4e7397] text-sm">Last seen in the kitchen</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 bg-slate-50 px-4 py-3 rounded-md">
+            <div class="flex-shrink-0 h-14 w-14 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/5f19507f-a52b-4343-a958-381270c2917b.png");'></div>
+            <div>
+              <p class="text-[#0e141b] text-base font-medium">Found: Black jacket</p>
+              <p class="text-[#4e7397] text-sm">Size L, brand is North Face</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 bg-slate-50 px-4 py-3 rounded-md">
+            <div class="flex-shrink-0 h-14 w-14 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6ec95f94-b411-4458-80d4-bd61e322b3ec.png");'></div>
+            <div>
+              <p class="text-[#0e141b] text-base font-medium">Lost: Water bottle</p>
+              <p class="text-[#4e7397] text-sm">Blue color, with a penguin sticker</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 bg-slate-50 px-4 py-3 rounded-md">
+            <div class="flex-shrink-0 h-14 w-14 bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/22ebf445-fc86-4044-913f-69046cee7b78.png");'></div>
+            <div>
+              <p class="text-[#0e141b] text-base font-medium">Lost: Wallet</p>
+              <p class="text-[#4e7397] text-sm">Brown color, leather, initials are 'JW'</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="flex justify-end mt-6">
+          <button class="flex items-center gap-2 bg-[#1980e6] text-white px-4 py-3 rounded-xl text-base font-bold">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+            </svg>
+            <span>Add New Item</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

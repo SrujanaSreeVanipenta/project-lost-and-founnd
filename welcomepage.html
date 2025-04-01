@@ -1,0 +1,464 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Lost and Found Portal</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body><html>
+    <head>
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+      <link
+        rel="stylesheet"
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+      />
+  
+      <title>Lost and Found Portal</title>
+      <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+      <style>
+        .nav-menu ul{
+      display: flex;
+      padding-left: 850px;
+  }
+  .nav-menu li{
+      list-style: none;
+      margin-right: 20px;
+  }
+  .nav-menu li:last-child{
+      margin-right: 0;
+  }
+  .nav-menu a{
+      text-decoration: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 1.6rem;
+      color: #333;
+  }
+  .nav-menu a:hover{
+      color: #ff7f50;
+  }
+      </style>
+      <header>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="userprofile.html">Profile</a></li>
+            <li><a href="itemdetailview.html">Details</a></li>
+            <li><a href="itemsubmission.html">Submission</a></li>
+            <li><a href="itemlistingsviewer.html">Listing</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="relative flex size-full min-h-screen flex-col bg-[#f8fafb] group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8edf3] px-10 py-3">
+            <div class="flex items-center gap-4 text-[#0e141b]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6_535)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em]">Lost and Found</h2>
+            </div>
+          </header>
+          <div class="px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+              <div class="@container">
+                <div class="@[480px]:p-4">
+                  <div
+                    class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/bf6440f7-18d8-4902-95af-0cf4cf8556f1.png");'
+                  >
+                    <div class="flex flex-col gap-2 text-left">
+                      <h1
+                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                      >
+                        Found something?
+                      </h1>
+                      <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                        We'll help you get it back to its owner. Start by telling us where you found the item.
+                      </h2>
+                    </div>
+                    <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+                      <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                        <div
+                          class="text-[#507395] flex border border-[#d1dbe6] bg-[#f8fafb] items-center justify-center pl-[15px] rounded-l-xl border-r-0"
+                          data-icon="MagnifyingGlass"
+                          data-size="20px"
+                          data-weight="regular"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          placeholder="Enter location"
+                          class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e141b] focus:outline-0 focus:ring-0 border border-[#d1dbe6] bg-[#f8fafb] focus:border-[#d1dbe6] h-full placeholder:text-[#507395] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                          value=""
+                        />
+                        <div class="flex items-center justify-center rounded-r-xl border-l-0 border border-[#d1dbe6] bg-[#f8fafb] pr-[7px]">
+                          <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#2080df] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                          >
+                            <span class="truncate">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="@container">
+                <div class="@[480px]:p-4">
+                  <div
+                    class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/89f7ace6-c98d-46ed-aacd-79665ea21564.png");'
+                  >
+                    <div class="flex flex-col gap-2 text-left">
+                      <h1
+                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                      >
+                        Lost something?
+                      </h1>
+                      <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                        We're here to help you find it. Start by telling us what you lost.
+                      </h2>
+                    </div>
+                    <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+                      <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                        <div
+                          class="text-[#507395] flex border border-[#d1dbe6] bg-[#f8fafb] items-center justify-center pl-[15px] rounded-l-xl border-r-0"
+                          data-icon="MagnifyingGlass"
+                          data-size="20px"
+                          data-weight="regular"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          placeholder="What did you lose?"
+                          class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e141b] focus:outline-0 focus:ring-0 border border-[#d1dbe6] bg-[#f8fafb] focus:border-[#d1dbe6] h-full placeholder:text-[#507395] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                          value=""
+                        />
+                        <div class="flex items-center justify-center rounded-r-xl border-l-0 border border-[#d1dbe6] bg-[#f8fafb] pr-[7px]">
+                          <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#2080df] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                          >
+                            <span class="truncate">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-10 px-4 py-10 @container">
+                <h1
+                  class="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  What's commonly lost
+                </h1>
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                  <div class="flex flex-col gap-3 pb-3">
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                      style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e4610fd1-f2c9-466f-97b7-bdced11ee51d.png");'
+                    ></div>
+                    <div>
+                      <p class="text-[#0e141b] text-base font-medium leading-normal">Keys</p>
+                      <p class="text-[#507395] text-sm font-normal leading-normal">
+                        Forgetting your keys is a common mistake. If you've found someone else's keys, we can help you return them.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3 pb-3">
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                      style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4123ba0a-bb74-47c4-9e51-21368a57332f.png");'
+                    ></div>
+                    <div>
+                      <p class="text-[#0e141b] text-base font-medium leading-normal">Wallets</p>
+                      <p class="text-[#507395] text-sm font-normal leading-normal">
+                        Losing your wallet is stressful. If you've found someone else's wallet, we'll help you get it back to its owner.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3 pb-3">
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                      style='background-image: url("https://cdn.usegalileo.ai/sdxl10/f61e0e2a-7cba-4b42-a839-e5b4071a0a0a.png");'
+                    ></div>
+                    <div>
+                      <p class="text-[#0e141b] text-base font-medium leading-normal">Phones</p>
+                      <p class="text-[#507395] text-sm font-normal leading-normal">
+                        Misplacing your phone is frustrating. If you've found someone else's phone, we can help you contact the owner.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="flex justify-center">
+            <div class="flex max-w-[960px] flex-1 flex-col">
+              <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+                <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                  <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">About</a>
+                  <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">Support</a>
+                  <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                  <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                </div>
+                <p class="text-[#507395] text-base font-normal leading-normal">@2023 Lost and Found</p>
+              </footer>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </body>
+  </html>
+  
+    <style>
+      .nav-menu ul{
+    display: flex;
+    padding-left: 850px;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    color: #333;
+}
+.nav-menu a:hover{
+    color: #ff7f50;
+}
+    </style>
+    <header>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="userprofile.html">Profile</a></li>
+          <li><a href="itemdetailview.html">Details</a></li>
+          <li><a href="itemsubmission.html">Submission</a></li>
+          <li><a href="itemlistingsviewer.html">Listing</a></li>
+          <li><a href="loginpage.html">Login</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fafb] group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8edf3] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e141b]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em]">Lost and Found</h2>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/bf6440f7-18d8-4902-95af-0cf4cf8556f1.png");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Found something?
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      We'll help you get it back to its owner. Start by telling us where you found the item.
+                    </h2>
+                  </div>
+                  <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+                    <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                      <div
+                        class="text-[#507395] flex border border-[#d1dbe6] bg-[#f8fafb] items-center justify-center pl-[15px] rounded-l-xl border-r-0"
+                        data-icon="MagnifyingGlass"
+                        data-size="20px"
+                        data-weight="regular"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        placeholder="Enter location"
+                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e141b] focus:outline-0 focus:ring-0 border border-[#d1dbe6] bg-[#f8fafb] focus:border-[#d1dbe6] h-full placeholder:text-[#507395] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                        value=""
+                      />
+                      <div class="flex items-center justify-center rounded-r-xl border-l-0 border border-[#d1dbe6] bg-[#f8fafb] pr-[7px]">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#2080df] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                        >
+                          <span class="truncate">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/89f7ace6-c98d-46ed-aacd-79665ea21564.png");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Lost something?
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      We're here to help you find it. Start by telling us what you lost.
+                    </h2>
+                  </div>
+                  <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+                    <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                      <div
+                        class="text-[#507395] flex border border-[#d1dbe6] bg-[#f8fafb] items-center justify-center pl-[15px] rounded-l-xl border-r-0"
+                        data-icon="MagnifyingGlass"
+                        data-size="20px"
+                        data-weight="regular"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        placeholder="What did you lose?"
+                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e141b] focus:outline-0 focus:ring-0 border border-[#d1dbe6] bg-[#f8fafb] focus:border-[#d1dbe6] h-full placeholder:text-[#507395] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                        value=""
+                      />
+                      <div class="flex items-center justify-center rounded-r-xl border-l-0 border border-[#d1dbe6] bg-[#f8fafb] pr-[7px]">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#2080df] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                        >
+                          <span class="truncate">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <h1
+                class="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+              >
+                What's commonly lost
+              </h1>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e4610fd1-f2c9-466f-97b7-bdced11ee51d.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Keys</p>
+                    <p class="text-[#507395] text-sm font-normal leading-normal">
+                      Forgetting your keys is a common mistake. If you've found someone else's keys, we can help you return them.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4123ba0a-bb74-47c4-9e51-21368a57332f.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Wallets</p>
+                    <p class="text-[#507395] text-sm font-normal leading-normal">
+                      Losing your wallet is stressful. If you've found someone else's wallet, we'll help you get it back to its owner.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/f61e0e2a-7cba-4b42-a839-e5b4071a0a0a.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Phones</p>
+                    <p class="text-[#507395] text-sm font-normal leading-normal">
+                      Misplacing your phone is frustrating. If you've found someone else's phone, we can help you contact the owner.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">About</a>
+                <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">Support</a>
+                <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#507395] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#507395] text-base font-normal leading-normal">@2023 Lost and Found</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
